@@ -1,0 +1,58 @@
+<div class="main__popup">
+  <div class="cart-body">
+    <div class="cart-close"></div>
+    <div class="phone__abs">
+      <img src="/main/img/photo/contact.png" alt="phone" />
+    </div>
+    <div class="contacts d-flex-col">
+      <p>
+        Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время
+      </p>
+      <form action="post">
+        <div class="contacts__form d-flex-col">
+          <div class="d-flex-col">
+            <label class="input__label phone__label" for="name-form">Имя</label>
+            <input
+              type="text"
+              name="name-form"
+              id="name-form"
+              class="input-lab phone-lab"
+              required=""
+              placeholder="Напишите ваше имя"
+            />
+          </div>
+          <div class="d-flex-col">
+            <label class="input__label phone__label" for="phone-form"
+              >Телефон</label
+            >
+            <input
+              type="text"
+              name="phone-form"
+              id="phone-form"
+              class="input-lab phone-lab"
+              required=""
+              placeholder="Напишите ваш телефон"
+            />
+          </div>
+          <div class="d-flex-col">
+            <label class="input__label phone__label" for="message-form"
+              >Комментарий</label
+            >
+            <textarea
+              name="message-form"
+              class="input-lab phone-lab"
+              required=""
+              placeholder="Напишите ваш комментарий"
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            id="button-form"
+            value="Записаться"
+            class="contacts__submit input-lab btn"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
