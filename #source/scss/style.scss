@@ -537,6 +537,7 @@
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   cursor: pointer;
+  -webkit-appearance: none;
 
   &:hover {
     background: #000000;
