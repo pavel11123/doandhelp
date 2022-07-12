@@ -6,6 +6,11 @@
   <meta name="format-detection" content="telephone=no" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="транзит, параллельный импорт, через Турцию, санкции, эмбарго, застрял груз, 
+    турецкий транзит, реэкспорт, второй поставщик, посредник, Турция, проблема импорта, импорт в рф" />
+  <meta name="description" content="Поможем доставить ваш груз легально, быстро и без головной боли">
+  <meta name="author" content="studio.kowalenko.net">
+
   <link rel="stylesheet" type="text/css" href="main/css/style.css?v=1" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
@@ -303,7 +308,7 @@
           <p>
             Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время
           </p>
-          <form id="contact-form">
+          <form id="contact-form-popup">
             <div class="contacts__form d-flex-col">
               <div class="d-flex-col">
                 <label class="input__label phone__label" for="name-form">Имя</label>
@@ -356,6 +361,32 @@
           },
           (err) => {
             btn.value = "Успешно отправлено";
+            alert(JSON.stringify(err));
+          }
+        );
+      });
+  </script>
+
+  <script type="text/javascript">
+    const btn2 = document.getElementById("button");
+
+    document
+      .getElementById("contact-form-popup")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        btn2.value = "Отправка...";
+
+        const serviceID = "default_service";
+        const templateID = "template_ozkbogg";
+
+        emailjs.sendForm(serviceID, templateID, this).then(
+          () => {
+            btn2.value = "Успешно отправлено";
+            alert("Заявка отправлена! Скоро мы свяжемся с Вами");
+          },
+          (err) => {
+            btn2.value = "Успешно отправлено";
             alert(JSON.stringify(err));
           }
         );
