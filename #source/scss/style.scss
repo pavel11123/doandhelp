@@ -257,7 +257,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../img/background/back.png);
+    background: url(../img/background/back.webp);
     z-index: -1;
     background-repeat: no-repeat;
     background-size: cover;
@@ -372,7 +372,7 @@
 }
 
 .section__main-back {
-  background-image: url(../img/background/back.png);
+  background-image: url(../img/background/back.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: adaptiv-number(360, 775, 1440, 600);
@@ -537,6 +537,7 @@
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   cursor: pointer;
+  -webkit-appearance: none;
 
   &:hover {
     background: #000000;
@@ -561,7 +562,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../img/background/back3.png);
+    background: url(../img/background/back3.webp);
     z-index: -1;
     background-repeat: repeat;
     background-size: contain;
